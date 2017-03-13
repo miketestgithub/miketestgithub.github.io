@@ -1,0 +1,123 @@
+// Customization
+*
+	box-sizing border-box
+	
+html, body
+	font-family "Open Sans", sans-serif
+	font-size 10px
+	line-height 1.5
+
+.widther
+	width 120rem
+	margin 0 auto
+	
+	@media screen and (max-width: 1200px) 
+		width 100%	
+		
+	
+.main-itm
+	@media screen and (min-width: 760px) 
+		width 100%
+		justify-content space-between
+			
+			
+	@media screen and (min-width: 760px) 
+		display flex
+		flex-direction row
+		padding 3rem
+		&_row
+			display block
+	@media screen and (min-width: 1200px) 
+		padding 6rem
+	
+		
+	&-txtbx
+		padding 1.5rem
+		margin-bottom 2rem
+		@media screen and (min-width: 760px) 
+			padding 0
+			align-self center
+			width 47%
+			
+			&_mod
+				width 80%
+			
+	&__h1			
+		font-size 1.6rem
+		text-transform uppercase
+		color #adadad
+		font-weight 400
+		margin 0
+	&__h2
+		font-size 3rem
+		text-transform uppercase
+		font-weight 600
+		margin 0
+		
+		
+		@media screen and (min-width: 760px) 
+			font-size 3.7rem
+			margin-bottom 20px
+			
+		@media screen and (min-width: 1200px) 
+			font-size 4.7rem
+			line-height 6rem
+	&__txt
+		font-size 1.6rem
+		margin 0
+		line-height 2.6rem	
+		
+		@media screen and (min-width: 760px) 
+			margin-bottom 3rem
+			
+	&-imgbx 
+		margin-bottom 3rem
+		@media screen and (min-width: 760px) 
+			align-self center
+			width 47%
+
+			&_fullw
+				width 100%
+				align-self flex-start
+			&_w2
+				width 65%
+			&_w3 
+				width 30%
+				&:after	
+					content 'Вид с переулка'
+					display block
+					position relative
+					top -1rem
+					color #adadad
+					font-size 1.4rem		
+			&_start
+				align-self flex-start
+				padding-bottom 14rem
+			&_end
+				align-self flex-end		
+	
+
+	&__img	
+		display block
+		width 100%
+		height auto
+		margin-bottom 2rem
+		
+		
+	&__but
+		font-size 1.6rem
+		text-transform uppercase
+		padding 20px 22px 16px
+		border 1px solid #2f302f
+		background-color transparent
+		font-family "Open Sans", sans-serif
+		margin 3rem 0 2rem
+			
+		&:hover 
+			color red
+			border-color red
+			cursor pointer		
+	
+
+
+			
