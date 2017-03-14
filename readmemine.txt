@@ -6,3 +6,6 @@ just "git push origin yournamebranch" - which is master always - lets try other 
 lets try 
 1) from sublime
 2) push from other branch to origin
+
+
+1) started with adding changes here
