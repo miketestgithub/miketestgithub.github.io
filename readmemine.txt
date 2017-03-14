@@ -8,4 +8,5 @@ lets try
 2) push from other branch to origin
 
 
-1) started with adding changes here
+1) ok it is called push branch
+2) now lets try from this branch immediately
