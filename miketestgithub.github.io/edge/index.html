@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Edge</title>
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- endbuild -->
+
+    <!--build:js js/main.min.js -->
+
+    <script src="js/jquery-3.2.1.min.js" type="application/javascript"></script>
+
+    <script src="js/vendor/wheel-indicator.js"></script>
+    <script src="js/vendor/oliwpageslider.js"></script>
+    <script src="js/vendor/Wallop.js"></script>
+    <script src="js/vendor/pagination.js"></script>
+    <script src="js/vendor/plugins.js"></script>
+    <script src="js/vendor/sly.js"></script>
+    <script src="js/vendor/horizontal.js"></script>
+    <script src="js/vendor/main.js" type="application/javascript"></script>
+
+    <!-- endbuild -->
+</head>
+
+<body class="body-scroll">
+    <header>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <div class="navbar__brand-title">
+                    <img src="images/logo.png" alt="EDGE">
+                </div>
+            </div>
+            <ul id="pageslider__nav" class="navbar__list">
+                <li data-menuanchor="firstPage" class="navbar__list-item  navbar__list-item--introduction">
+                    <a href="#firstPage">О клубе</a>
+                </li>
+                <li data-menuanchor="secondPage" class="navbar__list-item">
+                    <a href="#secondPage">Сервис</a>
+                </li>
+                <li data-menuanchor="3rdPage" class="navbar__list-item  navbar__list-item--gallery">
+                    <a href="#3rdPage">Галерея</a>
+                </li>
+                <li data-menuanchor="4thPage" class="navbar__list-item">
+                    <a href="#4thPage">Клубные карты</a>
+                </li>
+                <li data-menuanchor="5thPage" class="navbar__list-item">
+                    <a href="#5thPage">Контакты</a>
+                </li>
+                <li data-menuanchor="6thPage" class="navbar__list-item  navbar__list-item--callback  modal-content__open-btn">
+                    <a href="#6thPage">звонок</a>
+                </li>
+            </ul>
+            <div class="btn__wraper  btn__wraper--order">
+                <a href="#" class="btn  modal-content__open-btn">Заказать звонок</a>
+            </div>
+        </nav>
+    </header>
+    <div id="wrap">
+        <div class="page">
+            <div class="introduction">
+                <div class="Wallop  Wallop--1  Wallop--slide">
+                    <div class="Wallop-list">
+                        <div class="Wallop-item Wallop-item--current">
+                            <div class="Wallop__text-wrapper">
+                                <h2>More than fitness</h2>
+                                <p>EDGE — фитнес на грани будущего и новых возможностей.
+                                </p>
+                            </div>
+                            <img src="images/introduction-swimming-pool.jpg" alt="Swimming pool">
+                        </div>
+                        <div class="Wallop-item">
+                            <div class="Wallop__text-wrapper">
+                                <h2>More than comfort</h2>
+                                <p>EDGE — уникальное пространство для совершенствования своего тела, которое задает новые ориентиры
+                                    качества и комфорта в спортивной индустрии.</p>
+                            </div>
+                            <img src="images/intro2.png" alt="Swimming pool">
+                        </div>
+                        <div class="Wallop-item">
+                            <div class="Wallop__text-wrapper">
+                                <h2>More than service</h2>
+                                <p>Ничего не должно отвлекать Вас от работы над собой — в EDGЕ представлены услуги бара-ресторана,
+                                    прачечной, индивидуального тренинга и сейфового хранения.
+                                </p>
+                            </div>
+                            <img src="images/intro3.png" alt="Swimming pool">
+                        </div>
+                    </div>
+                    <button class="Wallop-buttons  Wallop-buttonPrevious">Previous</button>
+                    <button class="Wallop-buttons  Wallop-buttonNext">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="service">
+                <section id="timeline">
+                    <div class="tl-item">
+                        <div class="tl-bg" style="background-image: url(images/some1.png)"></div>
+                        <div class="tl-year">
+                            <p class="service__h f2 heading--sanSerif">Фитнес</p>
+                        </div>
+                        <div class="tl-content">
+                            <p class="tl-content__txt">10 фитнес-залов разного направления: тренажерный зал, групповые тренировки, аntigravity, аквааэробика,
+                                кардиозона.
+                            </p>
+                            <div class="tl-content-more">
+                                <p>EDGE — это 10 финтес-залов общей площадью 4 000 м², которые оснащены тренажёрами мировых
+                                    лидеров спортивного оборудования — Life Fitness и Hammer Strength. Среди них новейшие
+                                    беговые дорожки с HD-телеконсолями, которые воссоздают иммерсивные видео с эффектом телеприсутствия
+                                    — синергия музыки и видео создают новое представление о кардиотренировках. В фитнес клубе
+                                    представлены эксклюзивные роботизированные тренажёры Milon — 1 кардиосиловой круг Milon
+                                    заменяет 1,5 часа обычной тренировки. Такая система позволяет Вам сэкономить время и
+                                    повысить эффективность работы над собой. </p>
+
+                                <p>Среди уникальных услуг клуба — фитнес-тестирование, где возможно узнать точный состав тела
+                                    и получить карту развития мышц. А «умная» система MyZone определит оптимальную интенсивность
+                                    нагрузки, позволит следить за своим физическим состоянием и сконцентрироваться на тренировочном
+                                    процессе. </p>
+
+                                <p>Весь тренерский состав квалифицирован, имеет уровень Upper Premium и прошел обучение в фитнес-клубе
+                                    ENCORE (г. Москва). Профессиональный тренер составит для вас индивидуальную программу,
+                                    чтобы тренировки были максимально эффективными и комфортными для Вас. </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tl-item">
+                        <div class="tl-bg" style="background-image: url(images/some2.png)"></div>
+                        <div class="tl-year">
+                            <p class="service__h f2 heading--sanSerif">Фитнес-бар</p>
+                        </div>
+                        <div class="tl-content">
+                            <p class="tl-content__txt">Фитнес-меню, lounge-зона, авторская кухня и услуги персонального диетолога.</p>
+                            <div class="tl-content-more">
+                                <p>В фитнес-баре представлено авторская кухня, а блюда составлены с учетом особенностей спортивного
+                                    и диетического питания. В помещении спроектирована акустика уровня концертных залов —
+                                    для концертов с живой музыкой, а также для проведения вечеринок и вечерних DJ-сессий.
+                                    Фитнес-бар доступен только членам клуба и их гостям. Здесь можно отдохнуть после тренировки,
+                                    пообедать или провести деловую встречу.
+                                </p>
+                                <p>Меню фитнес-бара – это уникальное сочетание здорового питания, спортивного питания и деликатесных
+                                    блюд.Также в фитнес-баре Вы можете воспользоваться услугами диетолога для подбора индивидуальной
+                                    программы питания в зависимости от ваших предпочтений и поставленных целей.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tl-item">
+                        <div class="tl-bg" style="background-image: url(images/some3.png)"></div>
+                        <div class="tl-year">
+                            <p class="service__h f2 heading--sanSerif">Бассейн</p>
+                        </div>
+                        <div class="tl-content">
+                            <p class="tl-content__txt">Широкие дорожки для плавания, комфортная римская лестница для входа в бассейн, водопады, гейзеры,
+                                гидромассажные лежаки. </p>
+                            <div class="tl-content-more">
+
+                                <p>Бассейн — особенное место в фитнес-клубе. Он представляет собой роскошную SPA-зону, в которой
+                                    гармонично располагаются водопады, гейзеры, гидромассажные лежаки, дизайнерское освещение
+                                    и римская лестница для входа в бассейн. Размер бассейна рассчитан для комфортного плавания
+                                    — ширина каждой дорожки бассейна — 2,5 метра при длине бассейна 18 метров.</p>
+                                <p>Стальная чаша бассейна, многоуровневая система очистки воды с использованием озона и ультрафиолета
+                                    высокого давления обеспечивает невероятную чистоту и мягкость воды. Посетив однажды бассейн
+                                    с такой водой, Вы сразу почувствуете разницу в качестве и гигиеничности по сравнению
+                                    с привычными аквазонами. </p>
+                                <p>Кроме плавания, в бассейне можно заниматься аквааэробикой и записаться на персональную тренировку
+                                    к опытному тренеру. Для Вас будет разработана индивидуальная программа занятий в соответствии
+                                    с уровнем вашей физической подготовки и возрастных особенностей.</p>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="tl-item">
+                        <div class="tl-bg" style="background-image: url(images/some4.png)"></div>
+                        <div class="tl-year">
+                            <p class="service__h f2 heading--sanSerif">Хаммам</p>
+                        </div>
+                        <div class="tl-content">
+                            <p class="tl-content__txt">Уникальный стеклянно-мраморный хаммам с панорамным видом на бассейн </p>
+                            <div class="tl-content-more">
+
+                                <p>Хаммам — атмосферное место для релаксации и полноценного отдыха. Паровой удар в хаммаме —
+                                    это приятный, густой, воздушный поток, который сравним с эффектом от подлива на камни
+                                    при посещении сауны. </p>
+                                <p>Посещение турецкой бани не только приятное, но и полезное проведение времени, оно способствует
+                                    очищению организма, снятию напряжения в мышцах, улучшает состояние кожи и организма в
+                                    целом — всё это играет важную роль в Вашем физическом и эмоциональном восстановлении.
+                                    </p>
+                                <p>В EDGE установлен ультрасовременный стеклянно-мраморный хаммам KLAFS с панорамным видом на
+                                    бассейн фитнес-клуба. В конструкции установлены парящие лежаки, которые производят впечатление
+                                    невесомости, а материалы и компоненты спроектированы профессионалами международного уровня
+                                    в области Spa и Wellness.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="gallery">
+                <div class="Wallop  Wallop--2  Wallop--slide">
+                    <div class="Wallop-list">
+                        <div class="Wallop-item Wallop-item--current">
+                            <div class="Wallop__text-wrapper">
+                                <h2>Фитнес-зал</h2>
+                                <p>Панорамный вид, эксклюзивный дизайн, интерьер в стиле хай тек с применением отделки из натуральных
+                                    материалов — оникс, мрамор, гранит
+                                </p>
+                            </div>
+                            <img src="images/some1.png" alt="Swimming pool">
+                        </div>
+                        <div class="Wallop-item">
+                            <div class="Wallop__text-wrapper">
+                                <h2>Бар-ресторан</h2>
+                                <p>Авторский фитнес-бар с lounge-зоной, видеостеной и панорамой на цветную светящуюся чашу бассейна
+                                </p>
+                            </div>
+                            <img src="images/some2.png" alt="Swimming pool">
+                        </div>
+                        <div class="Wallop-item">
+                            <div class="Wallop__text-wrapper">
+                                <h2>Бассейн</h2>
+                                <p>Роскошная SPA-зона с водопадами, гейзерами, гидромассажем и инновационной системой цветного
+                                    освещения от WIBRE
+                                </p>
+                            </div>
+                            <img src="images/some3.png" alt="Swimming pool">
+                        </div>
+                        <div class="Wallop-item">
+                            <div class="Wallop__text-wrapper">
+                                <h2>Хаммам</h2>
+                                <p> Уникальный стеклянно-мраморный хаммам с панорамным видом на бассейн
+                                </p>
+                            </div>
+                            <img src="images/some4.png" alt="Swimming pool">
+                        </div>
+                        <div class="Wallop-item">
+                            <div class="Wallop__text-wrapper">
+                                <h2>Инновационные тренажёры </h2>
+                                <p>Дизайн тренажеров Life Fitness и Hammer Strength разработан специально для фитнес-клуба EDGE
+                                </p>
+                            </div>
+                            <img src="images/some5.png" alt="Swimming pool">
+                        </div>
+                    </div>
+                    <div class="Wallop-pagination">
+                        <button class="Wallop-dot Wallop-dot--current">01</button>
+                        <button class="Wallop-dot">02</button>
+                        <button class="Wallop-dot">03</button>
+                        <button class="Wallop-dot">04</button>
+                        <button class="Wallop-dot">05</button>
+                    </div>
+                    <button class="Wallop-buttons  Wallop-buttonPrevious">Previous</button>
+                    <button class="Wallop-buttons  Wallop-buttonNext">Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <div class="cards">
+                <h2>Клубные карты</h2>
+                <div class="cards__table  clearfix">
+                    <div class="cards__img">
+                        <img src="images/card-silver.png" alt="card">
+                        <img src="images/card-silver.png" alt="card">
+                        <img src="images/card-silver.png" alt="card">
+                    </div>
+                    <div class="frame">
+                        <ul class="slidee">
+                            <li class="cards__table-column">
+                                <div class="cards__table-row  cards__table-row--caption">Тип карты</div>
+                                <div class="cards__table-row  cards__table-main">
+                                    <span class="cards__table-big">Silver</span> Серебряная</div>
+                                <div class="cards__table-row  cards__table--main">
+                                    <span class="cards__table-big">Gold</span>Золотая</div>
+                                <div class="cards__table-row  cards__table--main">
+                                    <span class="cards__table-big">Platinum</span>Платиновая</div>
+                            </li>
+                            <li class="cards__table-column">
+                                <div class="cards__table-row  cards__table-row--caption">Длительность</div>
+                                <div class="cards__table-row">
+                                    <span class="cards__table-big">12</span> месяцев</div>
+                                <div class="cards__table-row">
+                                    <span class="cards__table-big">12</span> месяцев</div>
+                                <div class="cards__table-row">
+                                    <span class="cards__table-big">12</span> месяцев</div>
+                            </li>
+                            <li class="cards__table-column">
+                                <div class="cards__table-row  cards__table-row--caption">Длительность</div>
+                                <div class="cards__table-row">
+                                    <span class="cards__table-big">12</span> месяцев</div>
+                                <div class="cards__table-row">
+                                    <span class="cards__table-big">12</span> месяцев</div>
+                                <div class="cards__table-row">
+                                    <span class="cards__table-big">12</span> месяцев</div>
+                            </li>
+                            <li class="cards__table-column">
+                                <div class="cards__table-row  cards__table-row--caption">Длительность</div>
+                                <div class="cards__table-row">
+                                    <span class="cards__table-big">12</span> месяцев</div>
+                                <div class="cards__table-row">
+                                    <span class="cards__table-big">12</span> месяцев</div>
+                                <div class="cards__table-row">
+                                    <span class="cards__table-big">12</span> месяцев</div>
+                            </li>
+                            <li class="cards__table-column">
+                                <div class="cards__table-row  cards__table-row--caption">Длительность</div>
+                                <div class="cards__table-row">
+                                    <span class="cards__table-big">12</span> месяцев</div>
+                                <div class="cards__table-row">
+                                    <span class="cards__table-big">12</span> месяцев</div>
+                                <div class="cards__table-row">
+                                    <span class="cards__table-big">12</span> месяцев</div>
+                            </li>
+                            <li class="cards__table-column">
+                                <div class="cards__table-row  cards__table-row--caption">Длительность</div>
+                                <div class="cards__table-row">
+                                    <span class="cards__table-big">12</span> месяцев</div>
+                                <div class="cards__table-row">
+                                    <span class="cards__table-big">12</span> месяцев</div>
+                                <div class="cards__table-row">
+                                    <span class="cards__table-big">12</span> месяцев</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <div class="contacts">
+                <h2>Адрес клуба</h2>
+                <address>проспект Карла Маркса, 57
+                    <br> ежедневно с 7:00 до 01:00
+                    <br> +7 (383) 213-00-57
+                    <br> info@edgepremiumfitness.ru
+                </address>
+                <!-- <img src="images/map.png" alt="1"> -->
+            </div>
+        </div>
+        <div class="page">
+            <div class="callback">
+                <div class="callback__wrapper  clearfix">
+                    <div class="callback__left">
+                        <div class="callback__left-wrapper">
+                            <h2>Оформить клубную карту </h2>
+                            <p>Забронируй карту сейчас и получите персональную скидку 35%. Количество карт ограничено.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="callback__right">
+                        <form class="form" action="#" method="post">
+                            <div class="form__item">
+                                <input class="form__item-field" type="text" id="name" name="name" placeholder="Имя">
+                            </div>
+                            <div class="form__item">
+                                <input class="form__item-field" type="tel" id="tel" name="tel" placeholder="Телефон">
+                            </div>
+                            <div class="form__item">
+                                <input class="form__item-field" type="text" id="coment" name="coment" placeholder="Комментарий">
+                            </div>
+                            <fieldset class="form__group  form__group--checkbox">
+                                <div class="form__item">
+                                    <input id="white" type="checkbox" name="white" value="1">
+                                    <label class="form__item__title" for="white">Я подтверждаю свое согласие на обработку моих персональных данных (закон №152-ФЗ)</label>
+                                </div>
+                            </fieldset>
+                            <div class="btn-wraper">
+                                <button class="btn" type="submit">Отправить заявку</button>
+                            </div>
+                        </form>
+                    </div>
+                    <footer class="footer">
+                        <ul class="footer__list  clearfix">
+                            <li class="footer__item">
+                                <a href="#">EDGE Premium Fitness Club © 2017</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">Правила клуба</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">Вакансии</a>
+                            </li>
+                            <li class="footer__item  footer__item--last">
+                                <a href="#">Сделано в Круче</a>
+                            </li>
+                        </ul>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-content">
+        <div class="callback">
+            <div class="callback__wrapper  clearfix">
+                <div class="callback__left">
+                    <div class="callback__left-wrapper">
+                        <h2>Оформить клубную карту </h2>
+                        <p>Забронируй карту сейчас и получите персональную скидку 35%. Количество карт ограничено.
+                        </p>
+                    </div>
+                </div>
+                <div class="callback__right">
+                    <form class="form" action="#" method="post">
+                        <div class="form__item">
+                            <input class="form__item-field" type="text" id="name" name="name" placeholder="Имя">
+                        </div>
+                        <div class="form__item">
+                            <input class="form__item-field" type="tel" id="tel" name="tel" placeholder="Телефон">
+                        </div>
+                        <div class="form__item">
+                            <input class="form__item-field" type="text" id="coment" name="coment" placeholder="Комментарий">
+                        </div>
+                        <fieldset class="form__group  form__group--checkbox">
+                            <div class="form__item">
+                                <input id="white" type="checkbox" name="white" value="1">
+                                <label class="form__item__title" for="white">Я подтверждаю свое согласие на обработку моих персональных данных (закон №152-ФЗ)</label>
+                            </div>
+                        </fieldset>
+                        <div class="btn-wraper">
+                            <button class="btn" type="submit">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
+                <footer class="footer">
+                    <ul class="footer__list  clearfix">
+                        <li class="footer__item">
+                            <a href="#">EDGE Premium Fitness Club © 2017</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Правила клуба</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Вакансии</a>
+                        </li>
+                        <li class="footer__item  footer__item--last">
+                            <a href="#">Сделано в Круче</a>
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        pageslider(document.getElementById('wrap'), function () { });
+    </script>
+    <script>
+        // var wallopEl = document.querySelector('.Wallop');
+        // var slider = new Wallop(wallopEl);§
+        // New instance of Wallop
+        var slider1 = document.querySelector('.Wallop--1');
+        new Wallop(slider1);
+        var slider2 = document.querySelector('.Wallop--2');
+        var wallopGallery = new Wallop(slider2);
+
+        var paginationDots = Array.prototype.slice.call(document.querySelectorAll('.Wallop-dot'));
+        /*
+        Attach click listener on the dots
+        */
+        paginationDots.forEach(function (dotEl, index) {
+            dotEl.addEventListener('click', function () {
+                wallopGallery.goTo(index);
+            });
+        });
+        /*
+        Listen to wallop change and update classes
+        */
+        wallopGallery.on('change', function (event) {
+            removeClass(document.querySelector('.Wallop-dot--current'), 'Wallop-dot--current');
+            addClass(paginationDots[event.detail.currentItemIndex], 'Wallop-dot--current');
+        });
+        // Helpers
+        function addClass(element, className) {
+            if (!element) { return; }
+            element.className = element.className.replace(/\s+$/gi, '') + ' ' + className;
+        }
+        function removeClass(element, className) {
+            if (!element) { return; }
+            element.className = element.className.replace(className, '');
+        }
+    </script>
+</body>
+
+</html>
