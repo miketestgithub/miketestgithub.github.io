@@ -1,0 +1,218 @@
+html {
+	box-sizing: border-box;
+}
+*, *:after, *:before {
+	box-sizing: inherit;
+}
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #ccc;
+
+}
+.kim-header {
+	padding: 12px 20px;
+	box-shadow: 0 0 4px 0 #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	// background: -webkit-linear-gradient(#2F3034, #2A2C2C); 
+	// background: -moz-linear-gradient(#2F3034, #2A2C2C); 
+	// background: linear-gradient(#2F3034, #2A2C2C);
+	color:#000;
+	background-color: #fff;
+}
+.kim-sidebar {
+	z-index: 100;
+	background: -webkit-linear-gradient(#2F3034, #2A2C2C); 
+	background: -moz-linear-gradient(#2F3034, #2A2C2C); 
+	background: linear-gradient(#2F3034, #2A2C2C);
+	background-color: #fff;
+	padding: 8px 20px;
+	box-shadow: 0 2px 4px 0 #000;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	min-height: 200px;
+	width: 30%;
+}
+.kim-content {
+	padding-top: 36px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 75%;
+	align-items: center;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.kim-block {
+	margin: 0;
+	width: 15.56%;
+}
+.kim-unit {
+	
+}
+.kim-chkbx {
+	display: none;
+}
+.kim-lbl {
+	background-color: #7f7fe0;
+	box-shadow: 0 0 2px 0 #000;
+	justify-content: center;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	min-height: 10.5vmax;
+	color: #fff;
+	// text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.2vmax;
+	transition: all 0.2s linear;
+	padding: 0 20px;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+
+}
+.kim-lbl:before {
+	content: '';
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: all 0.2s ease;
+}
+.kim-chkbx:checked + .kim-lbl {
+	box-shadow: inset -7px 4px 36px 0 #000;
+	color:#a9a9a9;
+}
+.kim-chkbx:checked + .kim-lbl:before {
+	opacity: 1;
+}
+.kim-chkbx:checked + .kim-lbl:after {
+	opacity: 0.2;
+}
+.kim-lbl:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .15)), to(rgba(0, 0, 0, .25))), -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.5, rgba(255, 255, 255, .1)), color-stop(0.501, rgba(255, 255, 255, 0)), color-stop(1, rgba(255, 255, 255, 0)));
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, .15), rgba(0, 0, 0, .25)), -moz-linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
+	background: linear-gradient(top, rgba(255, 255, 255, .15), rgba(0, 0, 0, .25)), linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
+	width: 100%;
+	height: 100%;
+	display: block;
+	opacity: 1;
+	transition: all 0.2s ease;
+	// display: none;
+}
+.kim-lbl_bgcol1 {
+	background-color: #4ad4a6;
+}
+.kim-lbl_bgcol2 {
+	background-color: #790000;
+}
+.kim-lbl_bgcol3 {
+	background-color: #436ADF;
+}
+.kim-lbl_bgcol4 {
+	background-color: #CF4A4A;
+}
+.kim-lbl_bgcol5 {
+	background-color: #4A8140;
+}
+.kim-lbl_bgcol6 {
+	background-color: #A86BF9;
+}
+.kim-lbl_bgcol7 {
+	background-color: #35A94F;
+}
+.kim-lbl_bgcol8 {
+	background-color: #FFAE35;
+}
+.kim-lbl_bgcol9 {
+	background-color: #4C3769;
+}
+.kim-lbl_bgcol10 {
+	background-color: #222323;
+}
+.kim-tag {
+	display: none;
+}
+
+
+
+.kim-project {
+	color:#fff;
+	padding: 0 10%;
+	text-align: center;
+	margin-top:6vh;
+}
+.kim-project__h {
+	color:#fff;
+	font-size: 36px;
+	margin-bottom:4vh;
+}
+
+
+.kim-avatar {
+	width:6vmax;
+	height:6vmax;
+	border:1px solid #fff;
+	border-radius: 50%;
+	margin:0 auto;
+	background-color: #6a6ab4;
+	margin-bottom:4vh;
+}
+.kim-username {
+	margin-bottom:6vh;
+	font-weight:500;
+	font-size: 20px;
+}
+.kim-stats {
+	text-align: left;
+	padding: 0 30px;
+}
+.kim-stats__itm {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	margin:10px 0;
+}
+.kim-stats__itm__name {
+	width: 50%;
+}
+.kim-stats__itm__val {
+	width: 50%;
+	text-align: right;
+}
+.flipside {
+	display: none;
+}
+/* http://tobiasahlin.com/blog/how-to-animate-box-shadow/ */
+/* http://jsfiddle.net/AntonTrollback/nqQc7/ */
+/* https://onextrapixel.com/create-a-glossy-photo-effect-with-css3/ */
+/* https://codepen.io/aundrekerr/pen/GtLul */
+/* http://cssdeck.com/labs/css3-image-gloss-effect */
+
+
+
+// order of importance strict 1, strict 2 - musthaveness
+// order of step - step 1, step 2
+// color of categories or random colors
+// skins - folder
